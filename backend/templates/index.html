@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlwaysHere</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 h-screen flex items-center justify-center">
+
+    <!-- Main Container -->
+    <div class="w-full max-w-3xl mx-4 p-8 bg-white rounded-lg shadow-lg text-center animate-fade-in">
+        <h1 class="text-4xl font-bold text-blue-600 mb-4">Welcome to <span class="text-blue-400">AlwaysHere</span></h1>
+        <p class="text-gray-600 mb-6 text-lg">
+            <strong>Varun&lt;AI&gt;</strong> at your service. While the real me might be busy, 
+            I’ll always be here to lend an ear. What’s on your mind today?
+        </p>
+        <a href="/conversation" class="inline-block bg-blue-500 text-white px-6 py-3 rounded-md text-lg font-semibold hover:bg-blue-600 transition duration-300">
+            Start a Conversation
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="absolute bottom-4 text-center text-gray-400 text-sm">
+        Made with ❤️ by <a href="https://varun1352.github.io/" target="_blank" class="hover:text-blue-500">Varun</a> | © 2024 AlwaysHere
+    </footer>
+
+    <style>
+        /* Fade-in Animation */
+        @keyframes fade-in {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .animate-fade-in {
+            animation: fade-in 1.2s ease-out;
+        }
+    </style>
+</body>
+</html>

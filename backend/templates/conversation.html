@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlwaysHere Chat</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 h-screen flex flex-col">
+
+    <!-- Chat Container -->
+    <div class="w-full max-w-3xl mx-auto bg-white shadow-lg rounded-lg flex flex-col h-full mt-6 mb-6 overflow-hidden">
+        <!-- Chat Header -->
+        <div class="bg-blue-500 text-white text-lg font-semibold p-4 text-center">
+            AlwaysHere
+        </div>
+
+        <!-- Chat Box -->
+        <div id="chat-box" class="flex-1 p-4 overflow-y-auto bg-gray-100 space-y-4">
+            <!-- AI Welcome Message -->
+            <div class="flex items-start">
+                <div class="bg-blue-100 text-gray-800 p-3 rounded-lg max-w-xs">
+                    Hello! What's on your mind today?
+                </div>
+            </div>
+        </div>
+
+        <!-- Input Bar -->
+        <div class="flex items-center justify-between p-4 border-t bg-gray-50">
+            <!-- Recording Button -->
+            <button id="mic-button" onclick="toggleRecording()"
+                class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition duration-200 flex items-center">
+                🎤 Start Recording
+            </button>
+
+            <!-- End Chat Button -->
+            <label>
+                <input type="checkbox" id="send-transcript"> Send Transcript to Varun
+            </label>
+            <button id="end-chat-button" onclick="endChat()"
+                class="bg-red-500 text-white px-4 py-2 rounded-md hover:bg-red-600 transition duration-200 flex items-center">
+                🛑 End Chat
+            </button>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="/static/js/app.js"></script>
+</body>
+</html>
