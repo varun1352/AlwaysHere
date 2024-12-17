@@ -2,8 +2,9 @@
 
 ### **Overview**  
 **AlwaysHere** is a platform that allows you to connect with AI-powered versions of your friends and loved ones when they're unavailable. This conversational AI simulates a person's communication style and tone, creating a deeply personal and engaging experience. Whether it's lighthearted banter, meaningful conversations, or simply lending an ear, **AlwaysHere** ensures that you're **always connected**. 
-- Note: Currently the config.py gives the sys-prompt to the Llama 3.1-8b model to act like me so please edit the config.py for the same. 
-I am currently working on extending this project to a much open-source project(as long as I am not hindered by compute power and voices by ElevenLabs)
+- Note: 1) Currently the config.py gives the sys-prompt to the Llama 3.1-8b model to act like me so please edit the config.py for the same. 
+I am currently working on extending this project to a much open-source project(as long as I am not hindered by computing power and voices by ElevenLabs)
+  2) I worked on this project for the FractalTech hackathon and was built over the span of a 5-6 hours, so this is a very rudimentary implementation of the same. 
 ---
 
 ### **Features**
